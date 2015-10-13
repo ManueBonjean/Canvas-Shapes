@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+	<body>
+		<div id="loading">
+			<div>Loading...</div>
+		</div>
+		<div id="top-area">
+			<div id="info">
+				<span class="title">Informations</span>
+				<span id="informations-text"></span>
+			</div>
+			<div id="menu">
+				<a href="javascript:resetCanvas()">Reset</a>
+				<a href="javascript:showAbout()">About</a>
+				<div id="about">
+					<a href="javascript:closeAbout()" class="close">X</a>
+					<h1>About</h1>
+					<ul class="text-left">
+						<li>This program allows you draw parallelogram and circle</li>
+						<li>Insert 3 points inside white area with click.</li>
+						<li>You can change the parallelogram by dragging points inserted.</li>
+					</ul>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p class="text-right">By Manuel Bonjean</p>
+				</div>
+			</div>
+		</div>
+		<canvas id="canvas"></canvas>
+
+		<!-- DOM READY -->
+        <script src="js/rect.js"></script>
+        <script src="js/parallelogram.js"></script>
+        <script src="js/canvas-draw.js"></script>
+        <script src="js/main.js"></script>
+	</body>
+</html>
